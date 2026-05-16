@@ -1,26 +1,70 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { About } from "@/components/site/About";
+import { Services } from "@/components/site/Services";
+import { Stats } from "@/components/site/Stats";
+import { WhyUs } from "@/components/site/WhyUs";
+import { Testimonials } from "@/components/site/Testimonials";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
+import { Toaster } from "@/components/ui/sonner";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Crestline Clearing & Logistics (U) Ltd | Customs & Freight in Uganda" },
+      {
+        name: "description",
+        content:
+          "Trusted customs clearing, freight forwarding & logistics in Kampala, Uganda. Air, sea & land freight, warehousing and supply chain solutions.",
+      },
+      { property: "og:title", content: "Crestline Clearing & Logistics (U) Ltd" },
+      { property: "og:description", content: "Reliable customs clearing and logistics solutions in Uganda." },
+      { property: "og:type", content: "website" },
+    ],
+    links: [
+      { rel: "canonical", href: "/" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Crestline Clearing & Logistics (U) Ltd",
+          image: "",
+          telephone: "+256778370959",
+          address: { "@type": "PostalAddress", addressLocality: "Kampala", addressCountry: "UG" },
+          areaServed: "Uganda",
+        }),
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Stats />
+        <WhyUs />
+        <Testimonials />
+        <Contact />
+      </main>
+      <Footer />
+      <Toaster richColors position="top-right" />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
