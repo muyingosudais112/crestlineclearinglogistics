@@ -24,17 +24,17 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-smooth ${
-        scrolled ? "bg-navy-deep/90 backdrop-blur-lg border-b border-white/10" : "bg-transparent"
+        scrolled ? "bg-gradient-gold/95 backdrop-blur-lg border-b border-navy-deep/10 shadow-gold" : "bg-gradient-gold"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-2.5 text-white">
-          <div className="w-10 h-10 rounded-lg bg-gradient-gold flex items-center justify-center shadow-gold">
-            <Ship className="w-5 h-5 text-navy-deep" />
+        <a href="#home" className="flex items-center gap-2.5 text-navy-deep">
+          <div className="w-10 h-10 rounded-lg bg-navy-deep flex items-center justify-center shadow-elegant">
+            <Ship className="w-5 h-5 text-gold" />
           </div>
           <div className="leading-tight">
             <div className="font-display font-bold text-base">Crestline</div>
-            <div className="text-[10px] tracking-[0.2em] text-gold uppercase">Clearing & Logistics</div>
+            <div className="text-[10px] tracking-[0.2em] text-navy-deep/70 uppercase">Clearing & Logistics</div>
           </div>
         </a>
 
@@ -43,7 +43,7 @@ export function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-white/80 hover:text-gold transition-smooth relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-gold hover:after:w-full after:transition-all after:duration-300"
+              className="text-sm text-navy-deep/80 hover:text-navy-deep font-medium transition-smooth relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-navy-deep hover:after:w-full after:transition-all after:duration-300"
             >
               {l.label}
             </a>
