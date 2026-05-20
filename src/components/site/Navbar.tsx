@@ -51,13 +51,13 @@ export function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button asChild variant="gold" size="lg">
+          <Button asChild size="lg" className="bg-navy-deep text-gold hover:bg-navy hover:-translate-y-0.5 transition-smooth font-semibold">
             <a href="#contact">Get a Quote</a>
           </Button>
         </div>
 
         <button
-          className="lg:hidden text-white p-2"
+          className="lg:hidden text-navy-deep p-2"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -66,19 +66,19 @@ export function Navbar() {
       </div>
 
       {open && (
-        <div className="lg:hidden bg-navy-deep border-t border-white/10 animate-fade-up">
+        <div className="lg:hidden bg-gradient-gold border-t border-navy-deep/10 animate-fade-up">
           <div className="px-6 py-6 flex flex-col gap-5">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-white/90 hover:text-gold transition-smooth"
+                className="text-navy-deep/90 hover:text-navy-deep font-medium transition-smooth"
               >
                 {l.label}
               </a>
             ))}
-            <Button asChild variant="gold" size="lg" className="mt-2">
+            <Button asChild size="lg" className="mt-2 bg-navy-deep text-gold hover:bg-navy font-semibold">
               <a href="#contact" onClick={() => setOpen(false)}>Get a Quote</a>
             </Button>
           </div>
