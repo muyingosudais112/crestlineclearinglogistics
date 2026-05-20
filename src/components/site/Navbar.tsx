@@ -24,17 +24,17 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-smooth ${
-        scrolled ? "bg-gradient-gold/95 backdrop-blur-lg border-b border-navy-deep/10 shadow-gold" : "bg-gradient-gold"
+        scrolled ? "bg-navy-deep/90 backdrop-blur-lg border-b border-white/10 shadow-elegant" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-2.5 text-navy-deep">
-          <div className="w-10 h-10 rounded-lg bg-navy-deep flex items-center justify-center shadow-elegant">
-            <Ship className="w-5 h-5 text-gold" />
+        <a href="#home" className="flex items-center gap-2.5 text-white">
+          <div className="w-10 h-10 rounded-lg bg-gradient-gold flex items-center justify-center shadow-gold">
+            <Ship className="w-5 h-5 text-navy-deep" />
           </div>
           <div className="leading-tight">
             <div className="font-display font-bold text-base">Crestline</div>
-            <div className="text-[10px] tracking-[0.2em] text-navy-deep/70 uppercase">Clearing & Logistics</div>
+            <div className="text-[10px] tracking-[0.2em] text-gold uppercase">Clearing & Logistics</div>
           </div>
         </a>
 
@@ -43,7 +43,7 @@ export function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-navy-deep/80 hover:text-navy-deep font-medium transition-smooth relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-navy-deep hover:after:w-full after:transition-all after:duration-300"
+              className="text-sm text-white/80 hover:text-white font-medium transition-smooth relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-gold hover:after:w-full after:transition-all after:duration-300"
             >
               {l.label}
             </a>
@@ -51,13 +51,13 @@ export function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button asChild size="lg" className="bg-navy-deep text-gold hover:bg-navy hover:-translate-y-0.5 transition-smooth font-semibold">
+          <Button asChild size="lg" variant="gold" className="hover:-translate-y-0.5 transition-smooth font-semibold">
             <a href="#contact">Get a Quote</a>
           </Button>
         </div>
 
         <button
-          className="lg:hidden text-navy-deep p-2"
+          className="lg:hidden text-white p-2"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -66,19 +66,19 @@ export function Navbar() {
       </div>
 
       {open && (
-        <div className="lg:hidden bg-gradient-gold border-t border-navy-deep/10 animate-fade-up">
+        <div className="lg:hidden bg-navy-deep border-t border-white/10 animate-fade-up">
           <div className="px-6 py-6 flex flex-col gap-5">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-navy-deep/90 hover:text-navy-deep font-medium transition-smooth"
+                className="text-white/90 hover:text-gold font-medium transition-smooth"
               >
                 {l.label}
               </a>
             ))}
-            <Button asChild size="lg" className="mt-2 bg-navy-deep text-gold hover:bg-navy font-semibold">
+            <Button asChild size="lg" variant="gold" className="mt-2 font-semibold">
               <a href="#contact" onClick={() => setOpen(false)}>Get a Quote</a>
             </Button>
           </div>
