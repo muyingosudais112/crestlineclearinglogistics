@@ -1,20 +1,35 @@
-import heroImage from "@/assets/hero-port.jpg";
+import heroVideo from "@/assets/hero-port.mp4.asset.json";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 export function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Cargo ship at international port"
-          width={1920}
-          height={1088}
-          className="w-full h-full object-cover"
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          ref={videoRef}
+          src={heroVideo.url}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          aria-hidden="true"
+          className="w-full h-full object-cover will-change-transform animate-hero-zoom"
+          style={{ transform: `translate3d(0, ${scrollY * 0.3}px, 0) scale(1.08)` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/95 via-navy-deep/80 to-navy-deep/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-navy-deep/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-32 w-full">
