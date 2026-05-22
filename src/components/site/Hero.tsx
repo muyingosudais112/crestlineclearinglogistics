@@ -57,22 +57,6 @@ export function Hero() {
               </a>
             </Button>
           </div>
-
-          <div
-            className="mt-16 grid grid-cols-3 gap-8 max-w-xl border-t border-white/15 pt-8 animate-fade-up"
-            style={{ animationDelay: "0.4s" }}
-          >
-            {[
-              { v: "15+", l: "Years experience" },
-              { v: "500+", l: "Shipments cleared" },
-              { v: "24/7", l: "Support" },
-            ].map((s) => (
-              <div key={s.l}>
-                <div className="font-display text-3xl font-bold text-gold">{s.v}</div>
-                <div className="text-xs uppercase tracking-wider text-white/60 mt-1">{s.l}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
