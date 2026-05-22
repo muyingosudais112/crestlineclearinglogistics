@@ -31,7 +31,7 @@ export function Hero() {
             style={{ animationDelay: "0.1s" }}
           >
             Reliable Customs Clearing &{" "}
-            <span className="text-gradient-gold">Logistics Solutions</span> in Uganda
+            <span className="group relative bg-card rounded-2xl p-8 border-border shadow-card hover:shadow-elegant transition-smooth hover:-translate-y-1 overflow-hidden border-0">Logistics Solutions</span> in Uganda
           </h1>
 
           <p

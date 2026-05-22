@@ -23,7 +23,7 @@ export function WhyUs() {
             Why Choose Crestline
           </div>
           <h2 className="font-display text-4xl lg:text-5xl font-bold text-white leading-tight">
-            Built for businesses that <span className="text-gradient-gold">can't afford delays</span>
+            Built for businesses that <span className="group relative bg-card rounded-2xl p-8 border-border shadow-card hover:shadow-elegant transition-smooth hover:-translate-y-1 overflow-hidden border-0">can't afford delays</span>
           </h2>
         </div>
 
