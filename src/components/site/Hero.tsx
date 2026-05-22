@@ -51,11 +51,10 @@ export function Hero() {
           </h1>
 
           <p
-            className="text-lg md:text-xl text-white/80 max-w-2xl mb-10 leading-relaxed animate-fade-up"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 backdrop-blur-sm mb-8 animate-fade-up border-zinc-800 bg-slate-200"
             style={{ animationDelay: "0.2s" }}
           >
-            Efficient, secure, and stress-free freight forwarding. We move your cargo across borders
-            with precision, speed, and uncompromising integrity.
+            We provide comprehensive customs clearance, freight forwarding, and logistics management solutions designed to simplify global trade, optimize cargo movement, and ensure seamless delivery across borders with efficiency and precision.
           </p>
 
           <div
