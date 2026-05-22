@@ -27,7 +27,7 @@ export function Contact() {
               Get In Touch
             </div>
             <h2 className="font-display text-4xl lg:text-5xl font-bold text-navy leading-tight mb-6">
-              Let's move your cargo <span className="group relative bg-card rounded-2xl p-8 border-border shadow-card hover:shadow-elegant transition-smooth hover:-translate-y-1 overflow-hidden border-0">forward</span>
+              Let's move your cargo <span className="group relative bg-card rounded-2xl p-8 border-border shadow-card hover:shadow-elegant transition-smooth hover:-translate-y-1 overflow-hidden border-0 bg-gray-900">forward</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-10">
               Reach out for a free quote or speak directly with our team. We respond within one

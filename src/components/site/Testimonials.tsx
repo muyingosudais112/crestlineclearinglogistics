@@ -30,7 +30,7 @@ export function Testimonials() {
             Client Voices
           </div>
           <h2 className="font-display text-4xl lg:text-5xl font-bold text-navy leading-tight">
-            Trusted by businesses across <span className="group relative bg-card rounded-2xl p-8 border-border shadow-card hover:shadow-elegant transition-smooth hover:-translate-y-1 overflow-hidden border-0">East Africa</span>
+            Trusted by businesses across <span className="group relative bg-card rounded-2xl p-8 border-border shadow-card hover:shadow-elegant transition-smooth hover:-translate-y-1 overflow-hidden border-0 bg-gray-900">East Africa</span>
           </h2>
         </div>
 
