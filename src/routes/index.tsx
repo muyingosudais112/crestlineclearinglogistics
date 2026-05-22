@@ -56,9 +56,7 @@ function Index() {
       <Navbar />
       <main>
         <Hero />
-        <About />
         <Services />
-        <Stats />
         <WhyUs />
         <Testimonials />
         <Contact />
