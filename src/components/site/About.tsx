@@ -21,7 +21,7 @@ export function About() {
             className="rounded-2xl shadow-elegant w-full object-cover aspect-[5/4]"
           />
           <div className="absolute -bottom-8 -right-4 lg:-right-8 bg-gradient-navy text-white p-8 rounded-2xl shadow-elegant max-w-xs">
-            <div className="font-display text-5xl font-bold group relative bg-card rounded-2xl p-8 border-border shadow-card hover:shadow-elegant transition-smooth hover:-translate-y-1 overflow-hidden border-0">98%</div>
+            <div className="font-display text-5xl font-bold group relative bg-card rounded-2xl p-8 border-border shadow-card hover:shadow-elegant transition-smooth hover:-translate-y-1 overflow-hidden border-0 bg-gray-900">98%</div>
             <div className="text-sm text-white/80 mt-2">
               Client satisfaction across hundreds of shipments cleared annually.
             </div>
@@ -33,7 +33,7 @@ export function About() {
             About Crestline
           </div>
           <h2 className="font-display text-4xl lg:text-5xl font-bold text-navy mb-6 leading-tight">
-            Your trusted partner in <span className="group relative bg-card rounded-2xl p-8 border-border shadow-card hover:shadow-elegant transition-smooth hover:-translate-y-1 overflow-hidden border-0">customs & logistics</span>
+            Your trusted partner in <span className="group relative bg-card rounded-2xl p-8 border-border shadow-card hover:shadow-elegant transition-smooth hover:-translate-y-1 overflow-hidden border-0 bg-gray-900">customs & logistics</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-6">
             Crestline Clearing & Logistics (U) Ltd helps businesses navigate customs procedures and
