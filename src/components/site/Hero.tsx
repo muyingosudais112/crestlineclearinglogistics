@@ -51,7 +51,7 @@ export function Hero() {
           </h1>
 
           <p
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 backdrop-blur-sm mb-8 animate-fade-up border-zinc-800 bg-slate-200"
+            className="inline-flex items-center gap-2 px-4 py-2 border-gold/30 backdrop-blur-sm mb-8 animate-fade-up border-none border-white/0 border-0 text-slate-50 bg-[#dbdbdb]/0 rounded-none opacity-90"
             style={{ animationDelay: "0.2s" }}
           >
             We provide comprehensive customs clearance, freight forwarding, and logistics management solutions designed to simplify global trade, optimize cargo movement, and ensure seamless delivery across borders with efficiency and precision.
