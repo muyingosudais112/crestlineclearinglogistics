@@ -30,8 +30,7 @@ export function Hero() {
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-gradient-gold text-navy-deep font-semibold shadow-gold hover:brightness-110 hover:-translate-y-0.5 transition-smooth h-14 rounded-lg px-8 text-sm"
             style={{ animationDelay: "0.1s" }}
           >
-            Reliable Customs Clearing &{" "}
-            <span className="group relative bg-card rounded-2xl p-8 border-border shadow-card hover:shadow-elegant transition-smooth hover:-translate-y-1 overflow-hidden border-0">Logistics Solutions</span> in Uganda
+            Reliable Customs Clearing & Logistics in Uganda
           </h1>
 
           <p

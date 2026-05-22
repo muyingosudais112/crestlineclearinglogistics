@@ -30,9 +30,6 @@ export function Services() {
           <div className="text-xs tracking-[0.25em] uppercase text-gold font-semibold mb-4">
             What We Do
           </div>
-          <h2 className="font-display text-4xl lg:text-5xl font-bold text-navy leading-tight">
-            Full-spectrum logistics, <span className="group relative bg-card rounded-2xl p-8 border-border shadow-card hover:shadow-elegant transition-smooth hover:-translate-y-1 overflow-hidden border-0">one trusted partner</span>
-          </h2>
           <p className="text-muted-foreground text-lg mt-5">
             From the port to your warehouse — everything you need to move cargo internationally,
             handled by an experienced team that knows Ugandan customs inside out.
