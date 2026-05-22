@@ -57,7 +57,7 @@ function Index() {
         <Services />
         <WhyUs />
         <Testimonials />
-        <Contact />
+        
       </main>
       <Footer />
       <Toaster richColors position="top-right" />
