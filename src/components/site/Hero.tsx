@@ -15,7 +15,10 @@ export function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
+      <div
+        className="absolute inset-0 overflow-hidden"
+        style={{ transform: `translate3d(0, ${scrollY * 0.3}px, 0)` }}
+      >
         <video
           ref={videoRef}
           src={heroVideo.url}
@@ -26,7 +29,6 @@ export function Hero() {
           preload="auto"
           aria-hidden="true"
           className="w-full h-full object-cover will-change-transform animate-hero-zoom"
-          style={{ transform: `translate3d(0, ${scrollY * 0.3}px, 0) scale(1.08)` }}
         />
         <div className="absolute inset-0 bg-navy-deep/25" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent" />
