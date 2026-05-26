@@ -2,6 +2,7 @@ import heroVideo from "@/assets/hero-port.mp4.asset.json";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "@tanstack/react-router";
 
 export function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -14,7 +15,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
       <div
         className="absolute inset-0 overflow-hidden"
         style={{ transform: `translate3d(0, ${scrollY * 0.3}px, 0)` }}
@@ -30,31 +31,32 @@ export function Hero() {
           aria-hidden="true"
           className="w-full h-full object-cover will-change-transform animate-hero-zoom"
         />
-        <div className="absolute inset-0 bg-navy-deep/25" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-navy-deep/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/30 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-32 w-full">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 backdrop-blur-sm mb-8 animate-fade-up text-slate-900 bg-amber-400">
-            <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
-            <span className="text-xs tracking-[0.2em] uppercase text-gold font-medium text-slate-900 bg-amber-400">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 backdrop-blur-sm mb-8 animate-fade-up bg-amber-400">
+            <span className="w-2 h-2 rounded-full bg-navy-deep animate-pulse" />
+            <span className="text-xs tracking-[0.2em] uppercase text-slate-900 font-semibold">
               Kampala · Uganda · Worldwide
             </span>
           </div>
 
           <h1
-            className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight animate-fade-up drop-shadow-lg"
+            className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-up drop-shadow-lg"
             style={{ animationDelay: "0.1s" }}
           >
             Reliable Customs Clearing & Logistics in Uganda
           </h1>
 
           <p
-            className="text-lg md:text-xl text-white max-w-2xl mb-10 leading-relaxed animate-fade-up drop-shadow-lg"
+            className="text-lg md:text-xl text-white/90 max-w-2xl mb-10 leading-relaxed animate-fade-up drop-shadow"
             style={{ animationDelay: "0.2s" }}
           >
-            We provide comprehensive customs clearance, freight forwarding, and logistics management solutions designed to simplify global trade, optimize cargo movement, and ensure seamless delivery across borders with efficiency and precision.
+            Crestline Clearing & Logistics simplifies global trade — from customs documentation to
+            doorstep delivery — with the speed, accuracy and accountability modern supply chains demand.
           </p>
 
           <div
@@ -62,9 +64,9 @@ export function Hero() {
             style={{ animationDelay: "0.3s" }}
           >
             <Button asChild variant="gold" size="xl">
-              <a href="#contact">
+              <Link to="/contact">
                 Get a Quote <ArrowRight className="w-4 h-4 ml-1" />
-              </a>
+              </Link>
             </Button>
             <Button asChild variant="outlineLight" size="xl">
               <a href="tel:+256778370959">
