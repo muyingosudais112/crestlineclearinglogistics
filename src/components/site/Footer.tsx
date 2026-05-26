@@ -1,6 +1,15 @@
 import { Ship, Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 export function Footer() {
+  const links: Array<{ label: string; to: "/" | "/about" | "/services" | "/why-us" | "/contact" }> = [
+    { label: "Home", to: "/" },
+    { label: "About", to: "/about" },
+    { label: "Services", to: "/services" },
+    { label: "Why Us", to: "/why-us" },
+    { label: "Contact", to: "/contact" },
+  ];
+
   return (
     <footer className="bg-navy-deep text-white pt-20 pb-8">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -36,11 +45,10 @@ export function Footer() {
           <div>
             <h4 className="font-display font-semibold text-gold mb-5">Quick Links</h4>
             <ul className="space-y-3 text-sm text-white/70">
-              {[
-                ["Home", "#home"], ["About", "#about"], ["Services", "#services"],
-                ["Why Us", "#why"], ["Contact", "#contact"],
-              ].map(([l, h]) => (
-                <li key={l}><a href={h} className="hover:text-gold transition-smooth">{l}</a></li>
+              {links.map((l) => (
+                <li key={l.to}>
+                  <Link to={l.to} className="hover:text-gold transition-smooth">{l.label}</Link>
+                </li>
               ))}
             </ul>
           </div>
