@@ -36,7 +36,7 @@ export function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-32 w-full">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 backdrop-blur-sm mb-8 animate-fade-up bg-amber-500 text-slate-900">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 backdrop-blur-sm mb-8 animate-fade-up text-slate-900 bg-amber-400">
             <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
             <span className="text-xs tracking-[0.2em] uppercase text-gold font-medium text-slate-900 bg-amber-400">
               Kampala · Uganda · Worldwide
