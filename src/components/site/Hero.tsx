@@ -44,7 +44,7 @@ export function Hero() {
           </div>
 
           <h1
-            className="inline-flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-gradient-gold text-navy-deep font-semibold shadow-gold hover:brightness-110 hover:-translate-y-0.5 transition-smooth h-14 rounded-lg px-8 text-sm"
+            className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight animate-fade-up drop-shadow-lg"
             style={{ animationDelay: "0.1s" }}
           >
             Reliable Customs Clearing & Logistics in Uganda
