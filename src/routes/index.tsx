@@ -105,27 +105,6 @@ function Index() {
           </div>
         </section>
 
-        <section className="relative py-20 lg:py-28 bg-gradient-navy overflow-hidden">
-          <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_30%_30%,hsl(var(--gold)/0.4),transparent_40%),radial-gradient(circle_at_70%_70%,hsl(var(--gold)/0.25),transparent_40%)]" />
-          <div className="relative max-w-4xl mx-auto px-6 text-center">
-            <h2 className="font-display text-3xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-              Ready to move your cargo with confidence?
-            </h2>
-            <p className="text-white/75 text-lg mb-10 max-w-2xl mx-auto">
-              Get a tailored quote from our team within one business day.
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <Button asChild variant="gold" size="xl">
-                <Link to="/contact">
-                  Request a Quote <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
-              <Button asChild variant="outlineLight" size="xl">
-                <Link to="/why-us">Why Choose Us</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
       </main>
       <Partners />
       <Footer />
