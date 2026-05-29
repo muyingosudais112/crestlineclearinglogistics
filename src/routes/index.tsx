@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { Footer } from "@/components/site/Footer";
+import { Partners } from "@/components/site/Partners";
 import { Toaster } from "@/components/ui/sonner";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Globe2, ShieldCheck, Zap } from "lucide-react";
@@ -126,6 +127,7 @@ function Index() {
           </div>
         </section>
       </main>
+      <Partners />
       <Footer />
       <Toaster richColors position="top-right" />
     </div>
