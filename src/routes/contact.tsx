@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
-import { Partners } from "@/components/site/Partners";
 import { Toaster } from "@/components/ui/sonner";
 import { PageHeader } from "@/components/site/PageHeader";
 import { Button } from "@/components/ui/button";
@@ -118,7 +117,6 @@ function ContactPage() {
           </div>
         </section>
       </main>
-      <Partners />
       <Footer />
       <Toaster richColors position="top-right" />
     </div>
