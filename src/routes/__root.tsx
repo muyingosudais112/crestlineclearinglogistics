@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import craneFavicon from "../assets/crane-logo.png";
 
 function NotFoundComponent() {
   return (
@@ -86,10 +87,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5f557e64-ef74-419a-a08e-32a2329353f2/id-preview-bd9d0a2b--b5f83379-0890-4a14-a5b1-6b5008c84bf5.lovable.app-1778952953538.png" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/png", href: craneFavicon },
+      { rel: "apple-touch-icon", href: craneFavicon },
     ],
   }),
   shellComponent: RootShell,
