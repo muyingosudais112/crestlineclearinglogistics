@@ -139,6 +139,7 @@ function ContactPage() {
         </section>
       </main>
       <Footer />
+      <WhatsAppButton />
       <Toaster richColors position="top-right" />
     </div>
   );
