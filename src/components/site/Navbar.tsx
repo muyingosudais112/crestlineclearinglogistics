@@ -1,13 +1,15 @@
 import { useState } from "react";
-import { Menu, X, Ship } from "lucide-react";
+import { Menu, X, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "@tanstack/react-router";
+import { Logo } from "@/components/site/Logo";
 
 const links = [
   { label: "Home", to: "/" as const },
   { label: "About Us", to: "/about" as const },
   { label: "Services", to: "/services" as const },
   { label: "Why Choose Us", to: "/why-us" as const },
+  { label: "Track Shipment", to: "/track" as const },
   { label: "Contact", to: "/contact" as const },
 ];
 
@@ -16,18 +18,16 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-navy-deep/90 backdrop-blur-lg border-b border-white/10 shadow-elegant">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2.5 text-white">
-          <div className="w-10 h-10 rounded-lg bg-gradient-gold flex items-center justify-center shadow-gold">
-            <Ship className="w-5 h-5 text-navy-deep" />
-          </div>
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between gap-6">
+        <Link to="/" className="flex items-center gap-2.5 text-white shrink-0">
+          <Logo size={44} className="drop-shadow-[0_2px_8px_rgba(212,175,55,0.35)]" />
           <div className="leading-tight">
             <div className="font-display font-bold text-base">Crestline</div>
             <div className="text-[10px] tracking-[0.2em] text-gold uppercase">Clearing & Logistics</div>
           </div>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-9">
+        <nav className="hidden lg:flex items-center gap-7">
           {links.map((l) => (
             <Link
               key={l.to}
@@ -41,7 +41,10 @@ export function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden lg:flex items-center gap-3">
+          <Button asChild size="sm" variant="outlineLight" className="font-semibold">
+            <Link to="/track"><Truck className="w-4 h-4" /> Track</Link>
+          </Button>
           <Button asChild size="lg" variant="gold" className="hover:-translate-y-0.5 transition-smooth font-semibold">
             <Link to="/contact">Get a Quote</Link>
           </Button>
@@ -71,9 +74,16 @@ export function Navbar() {
                 {l.label}
               </Link>
             ))}
-            <Button asChild size="lg" variant="gold" className="mt-2 font-semibold">
-              <Link to="/contact" onClick={() => setOpen(false)}>Get a Quote</Link>
-            </Button>
+            <div className="flex gap-3 mt-2">
+              <Button asChild size="lg" variant="outlineLight" className="flex-1 font-semibold">
+                <Link to="/track" onClick={() => setOpen(false)}>
+                  <Truck className="w-4 h-4" /> Track
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="gold" className="flex-1 font-semibold">
+                <Link to="/contact" onClick={() => setOpen(false)}>Get a Quote</Link>
+              </Button>
+            </div>
           </div>
         </div>
       )}

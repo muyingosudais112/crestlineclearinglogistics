@@ -1,6 +1,6 @@
 import heroVideo from "@/assets/hero-port.mp4.asset.json";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone, Truck } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 
@@ -66,6 +66,11 @@ export function Hero() {
             <Button asChild variant="gold" size="xl">
               <Link to="/contact">
                 Get a Quote <ArrowRight className="w-4 h-4 ml-1" />
+              </Link>
+            </Button>
+            <Button asChild variant="outlineLight" size="xl">
+              <Link to="/track">
+                <Truck className="w-4 h-4" /> Track Shipment
               </Link>
             </Button>
             <Button asChild variant="outlineLight" size="xl">
