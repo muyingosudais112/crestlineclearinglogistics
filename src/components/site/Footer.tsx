@@ -1,12 +1,14 @@
-import { Ship, Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
 import { Link } from "@tanstack/react-router";
+import { Logo } from "@/components/site/Logo";
 
 export function Footer() {
-  const links: Array<{ label: string; to: "/" | "/about" | "/services" | "/why-us" | "/contact" }> = [
+  const links: Array<{ label: string; to: "/" | "/about" | "/services" | "/why-us" | "/track" | "/contact" }> = [
     { label: "Home", to: "/" },
     { label: "About", to: "/about" },
     { label: "Services", to: "/services" },
     { label: "Why Us", to: "/why-us" },
+    { label: "Track Shipment", to: "/track" },
     { label: "Contact", to: "/contact" },
   ];
 
@@ -16,9 +18,7 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
           <div className="lg:col-span-2 max-w-md">
             <div className="flex items-center gap-2.5 mb-5">
-              <div className="w-10 h-10 rounded-lg bg-gradient-gold flex items-center justify-center">
-                <Ship className="w-5 h-5 text-navy-deep" />
-              </div>
+              <Logo size={44} />
               <div className="leading-tight">
                 <div className="font-display font-bold">Crestline</div>
                 <div className="text-[10px] tracking-[0.2em] text-gold uppercase">Clearing & Logistics</div>
