@@ -3,6 +3,9 @@ import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { Footer } from "@/components/site/Footer";
 import { Partners } from "@/components/site/Partners";
+import { StatsCompact } from "@/components/site/StatsCompact";
+import { TestimonialsBlock } from "@/components/site/TestimonialsBlock";
+import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { Toaster } from "@/components/ui/sonner";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Globe2, ShieldCheck, Zap } from "lucide-react";
@@ -59,6 +62,8 @@ function Index() {
       <main>
         <Hero />
 
+        <StatsCompact />
+
         <section className="py-20 lg:py-28 bg-background">
           <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7">
@@ -105,9 +110,11 @@ function Index() {
           </div>
         </section>
 
+        <TestimonialsBlock />
       </main>
       <Partners />
       <Footer />
+      <WhatsAppButton />
       <Toaster richColors position="top-right" />
     </div>
   );
