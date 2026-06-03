@@ -7,6 +7,10 @@ export function WhatsAppButton() {
       aria-label="Chat with us on WhatsApp"
       className="fixed bottom-5 right-5 z-[60] group"
     >
+      <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap rounded-lg bg-navy-deep text-white text-xs font-medium px-3 py-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none shadow-lg">
+        Chat with us on WhatsApp
+        <span className="absolute right-[-4px] top-1/2 -translate-y-1/2 w-2 h-2 bg-navy-deep rotate-45" />
+      </span>
       <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-60 animate-ping" />
       <span className="relative flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] shadow-[0_10px_30px_-6px_rgba(37,211,102,0.6)] hover:scale-110 transition-transform duration-300">
         <svg viewBox="0 0 32 32" className="w-7 h-7 fill-white" aria-hidden="true">

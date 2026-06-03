@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, MapPin, Mail, Send } from "lucide-react";
+import { Phone, MapPin, Mail, Send, Navigation, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -64,13 +64,30 @@ export function Contact() {
               </a>
             </div>
 
-            <div className="rounded-2xl overflow-hidden shadow-card border border-border h-64">
-              <iframe
-                title="Crestline office map"
-                src="https://www.google.com/maps?q=Kampala,Uganda&output=embed"
-                className="w-full h-full border-0"
-                loading="lazy"
-              />
+            <div className="rounded-2xl overflow-hidden shadow-card border border-border bg-card p-6">
+              <div className="space-y-3 mb-5">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-navy flex items-center justify-center shrink-0">
+                    <MapPin className="w-5 h-5 text-gold" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-navy">Crestline Clearing & Logistics (U) Ltd</div>
+                    <div className="text-sm text-muted-foreground">Kampala, Uganda</div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                  <Clock className="w-3.5 h-3.5" /> Mon – Sat · 8:00 AM – 6:00 PM
+                </div>
+              </div>
+              <Button asChild variant="gold" className="w-full">
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=Crestline+Clearing+%26+Logistics+%28U%29+Ltd+Kampala"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Navigation className="w-4 h-4" /> Get Directions
+                </a>
+              </Button>
             </div>
           </div>
 
