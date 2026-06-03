@@ -91,7 +91,7 @@ function ContactPage() {
                       <div className="text-sm text-muted-foreground">Kampala, Uganda</div>
                     </div>
                   </div>
-                  <div className="flex items-center gap-1.5 text-xs text-muted-foreground pl-13 ml-1">
+                  <div className="flex items-center gap-1.5 text-xs text-muted-foreground pl-12">
                     <Clock className="w-3.5 h-3.5" /> Mon – Sat · 8:00 AM – 6:00 PM
                   </div>
                 </div>
