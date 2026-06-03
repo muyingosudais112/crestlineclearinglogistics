@@ -80,33 +80,30 @@ function ContactPage() {
                 </a>
               </div>
 
-              <div className="rounded-2xl overflow-hidden shadow-card border border-border bg-card">
-                <div className="h-72">
-                  <iframe
-                    title="Crestline Clearing & Logistics — Kampala office"
-                    src="https://www.google.com/maps?q=Crestline+Clearing+%26+Logistics+(U)Ltd,+Kampala&output=embed"
-                    className="w-full h-full border-0"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  />
-                </div>
-                <div className="p-5 flex flex-wrap items-center justify-between gap-3">
-                  <div>
-                    <div className="font-semibold text-navy">Crestline Clearing & Logistics (U) Ltd</div>
-                    <div className="text-xs text-muted-foreground flex items-center gap-1.5 mt-0.5">
-                      <Clock className="w-3.5 h-3.5" /> Mon – Sat · 8:00 AM – 6:00 PM
+              <div className="rounded-2xl overflow-hidden shadow-card border border-border bg-card p-6">
+                <div className="space-y-3 mb-5">
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-navy flex items-center justify-center shrink-0">
+                      <MapPin className="w-5 h-5 text-gold" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-navy">Crestline Clearing & Logistics (U) Ltd</div>
+                      <div className="text-sm text-muted-foreground">Kampala, Uganda</div>
                     </div>
                   </div>
-                  <Button asChild variant="gold" size="sm">
-                    <a
-                      href="https://www.google.com/maps/dir//Crestline+Clearing+%26+Logistics+(U)Ltd,+Kampala/@0.3178496,32.5582848,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbb4a277d6fef:0xe7b94a7c490d356d!2m2!1d32.6224845!2d0.3308222"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Navigation className="w-4 h-4" /> Get Directions
-                    </a>
-                  </Button>
+                  <div className="flex items-center gap-1.5 text-xs text-muted-foreground pl-13 ml-1">
+                    <Clock className="w-3.5 h-3.5" /> Mon – Sat · 8:00 AM – 6:00 PM
+                  </div>
                 </div>
+                <Button asChild variant="gold" className="w-full">
+                  <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=Crestline+Clearing+%26+Logistics+%28U%29+Ltd+Kampala"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Navigation className="w-4 h-4" /> Get Directions
+                  </a>
+                </Button>
               </div>
             </div>
 
