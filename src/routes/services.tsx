@@ -1,13 +1,12 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { Toaster } from "@/components/ui/sonner";
 import { PageHeader } from "@/components/site/PageHeader";
-import { Button } from "@/components/ui/button";
 import {
   FileCheck2, Ship, Plane, Truck, Warehouse, PackageSearch,
-  ClipboardList, Globe2, Boxes, ArrowRight,
+  ClipboardList, Globe2, Boxes,
 } from "lucide-react";
 
 export const Route = createFileRoute("/services")({
@@ -63,14 +62,6 @@ function ServicesPage() {
                   <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
                 </div>
               ))}
-            </div>
-
-            <div className="mt-16 text-center">
-              <Button asChild variant="gold" size="xl">
-                <Link to="/contact">
-                  Request a Quote <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
             </div>
           </div>
         </section>

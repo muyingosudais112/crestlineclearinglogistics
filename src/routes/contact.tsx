@@ -5,11 +5,12 @@ import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { Toaster } from "@/components/ui/sonner";
 import { PageHeader } from "@/components/site/PageHeader";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Phone, MapPin, Mail, Send, Navigation, Clock } from "lucide-react";
-import { toast } from "sonner";
-import { useState } from "react";
+import { Phone, MapPin, Mail, Navigation, Clock } from "lucide-react";
+
+const mapEmbedUrl =
+  "https://www.google.com/maps?q=Crestline%20Clearing%20%26%20Logistics%20%28U%29%20Ltd%20Kampala%2C%20Uganda&z=14&output=embed";
+const directionsUrl =
+  "https://www.google.com/maps/dir/?api=1&destination=Crestline%20Clearing%20%26%20Logistics%20%28U%29%20Ltd%20Kampala%2C%20Uganda";
 
 export const Route = createFileRoute("/contact")({
   component: ContactPage,
@@ -25,18 +26,6 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
-  const [loading, setLoading] = useState(false);
-
-  const onSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      toast.success("Message sent — we'll respond within one business day.");
-      (e.target as HTMLFormElement).reset();
-    }, 800);
-  };
-
   return (
     <div className="min-h-screen bg-background animate-fade-in">
       <Navbar />
@@ -48,7 +37,7 @@ function ContactPage() {
         />
 
         <section className="py-20 lg:py-28">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12">
+          <div className="max-w-4xl mx-auto px-6 lg:px-10">
             <div>
               <div className="space-y-5 mb-10">
                 <a href="tel:+256778370959" className="flex items-center gap-4 group">
@@ -80,8 +69,26 @@ function ContactPage() {
                 </a>
               </div>
 
-              <div className="rounded-2xl overflow-hidden shadow-card border border-border bg-card p-6">
-                <div className="space-y-3 mb-5">
+              <div className="rounded-2xl overflow-hidden shadow-card border border-border bg-card">
+                <div className="relative aspect-[16/9] bg-secondary">
+                  <iframe
+                    src={mapEmbedUrl}
+                    title="Crestline Clearing & Logistics location map"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    allowFullScreen
+                    tabIndex={-1}
+                    className="absolute inset-0 h-full w-full border-0"
+                  />
+                  <a
+                    href={directionsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Crestline location in Google Maps"
+                    className="absolute inset-0"
+                  />
+                </div>
+                <div className="space-y-3 p-6">
                   <div className="flex items-start gap-3">
                     <div className="w-10 h-10 rounded-lg bg-gradient-navy flex items-center justify-center shrink-0">
                       <MapPin className="w-5 h-5 text-gold" />
@@ -94,44 +101,14 @@ function ContactPage() {
                   <div className="flex items-center gap-1.5 text-xs text-muted-foreground pl-12">
                     <Clock className="w-3.5 h-3.5" /> Mon – Sat · 8:00 AM – 6:00 PM
                   </div>
+                  <Button asChild variant="gold" className="w-full">
+                    <a href={directionsUrl} target="_blank" rel="noopener noreferrer">
+                      <Navigation className="w-4 h-4" /> Get Directions
+                    </a>
+                  </Button>
                 </div>
-                <Button asChild variant="gold" className="w-full">
-                  <a
-                    href="https://www.google.com/maps/dir/?api=1&destination=Crestline+Clearing+%26+Logistics+%28U%29+Ltd+Kampala"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Navigation className="w-4 h-4" /> Get Directions
-                  </a>
-                </Button>
               </div>
             </div>
-
-            <form onSubmit={onSubmit} className="bg-gradient-navy rounded-2xl p-8 lg:p-10 shadow-elegant h-fit">
-              <h3 className="font-display text-2xl font-bold text-white mb-1">Request a Quote</h3>
-              <p className="text-white/70 text-sm mb-8">Tell us about your shipment.</p>
-
-              <div className="space-y-5">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <Input required placeholder="Full name" className="bg-white/10 border-white/15 text-white placeholder:text-white/50 h-12" />
-                  <Input required type="email" placeholder="Email" className="bg-white/10 border-white/15 text-white placeholder:text-white/50 h-12" />
-                </div>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <Input placeholder="Phone" className="bg-white/10 border-white/15 text-white placeholder:text-white/50 h-12" />
-                  <Input placeholder="Service needed" className="bg-white/10 border-white/15 text-white placeholder:text-white/50 h-12" />
-                </div>
-                <Textarea
-                  required
-                  rows={5}
-                  placeholder="Briefly describe your cargo, origin and destination..."
-                  className="bg-white/10 border-white/15 text-white placeholder:text-white/50"
-                />
-                <Button type="submit" variant="gold" size="xl" className="w-full" disabled={loading}>
-                  {loading ? "Sending..." : "Send Inquiry"}
-                  <Send className="w-4 h-4" />
-                </Button>
-              </div>
-            </form>
           </div>
         </section>
       </main>

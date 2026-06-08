@@ -1,11 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { Toaster } from "@/components/ui/sonner";
 import { PageHeader } from "@/components/site/PageHeader";
-import { Button } from "@/components/ui/button";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import warehouse from "@/assets/warehouse.jpg";
 
 export const Route = createFileRoute("/about")({
@@ -73,7 +72,7 @@ function AboutPage() {
                 we combine deep local expertise with global freight reach.
               </p>
 
-              <div className="grid sm:grid-cols-2 gap-3 mb-10">
+              <div className="grid sm:grid-cols-2 gap-3">
                 {points.map((p) => (
                   <div key={p} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
@@ -81,12 +80,6 @@ function AboutPage() {
                   </div>
                 ))}
               </div>
-
-              <Button asChild variant="gold" size="lg">
-                <Link to="/contact">
-                  Work With Us <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
             </div>
           </div>
         </section>
