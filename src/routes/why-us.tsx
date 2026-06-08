@@ -1,11 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { Toaster } from "@/components/ui/sonner";
 import { PageHeader } from "@/components/site/PageHeader";
-import { Button } from "@/components/ui/button";
-import { Zap, ShieldCheck, Users, BadgeCheck, Clock, ArrowRight } from "lucide-react";
+import { Zap, ShieldCheck, Users, BadgeCheck, Clock } from "lucide-react";
 import trucks from "@/assets/trucks.jpg";
 
 export const Route = createFileRoute("/why-us")({
@@ -62,14 +61,6 @@ function WhyUsPage() {
                   <p className="text-white/70 text-sm leading-relaxed">{it.desc}</p>
                 </div>
               ))}
-            </div>
-
-            <div className="mt-16 text-center">
-              <Button asChild variant="gold" size="xl">
-                <Link to="/contact">
-                  Start Your Shipment <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
             </div>
           </div>
         </section>

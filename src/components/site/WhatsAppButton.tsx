@@ -1,7 +1,7 @@
 export function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/256778370959?text=Hello%20Crestline%2C%20I%27d%20like%20a%20quote."
+      href="https://wa.me/256778370959"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"
