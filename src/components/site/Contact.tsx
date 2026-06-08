@@ -5,6 +5,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 
+const mapEmbedUrl =
+  "https://www.google.com/maps?q=Crestline%20Clearing%20%26%20Logistics%20%28U%29%20Ltd%20Kampala%2C%20Uganda&z=14&output=embed";
+const directionsUrl =
+  "https://www.google.com/maps/dir/?api=1&destination=Crestline%20Clearing%20%26%20Logistics%20%28U%29%20Ltd%20Kampala%2C%20Uganda";
+
 export function Contact() {
   const [loading, setLoading] = useState(false);
 
@@ -64,8 +69,26 @@ export function Contact() {
               </a>
             </div>
 
-            <div className="rounded-2xl overflow-hidden shadow-card border border-border bg-card p-6">
-              <div className="space-y-3 mb-5">
+            <div className="rounded-2xl overflow-hidden shadow-card border border-border bg-card">
+              <div className="relative aspect-[16/10] bg-secondary">
+                <iframe
+                  src={mapEmbedUrl}
+                  title="Crestline Clearing & Logistics location map"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                  tabIndex={-1}
+                  className="absolute inset-0 h-full w-full border-0"
+                />
+                <a
+                  href={directionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Crestline location in Google Maps"
+                  className="absolute inset-0"
+                />
+              </div>
+              <div className="space-y-3 p-6">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-lg bg-gradient-navy flex items-center justify-center shrink-0">
                     <MapPin className="w-5 h-5 text-gold" />
@@ -78,16 +101,12 @@ export function Contact() {
                 <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
                   <Clock className="w-3.5 h-3.5" /> Mon – Sat · 8:00 AM – 6:00 PM
                 </div>
+                <Button asChild variant="gold" className="w-full">
+                  <a href={directionsUrl} target="_blank" rel="noopener noreferrer">
+                    <Navigation className="w-4 h-4" /> Get Directions
+                  </a>
+                </Button>
               </div>
-              <Button asChild variant="gold" className="w-full">
-                <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=Crestline+Clearing+%26+Logistics+%28U%29+Ltd+Kampala"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Navigation className="w-4 h-4" /> Get Directions
-                </a>
-              </Button>
             </div>
           </div>
 
