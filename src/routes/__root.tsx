@@ -85,6 +85,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:description", content: "Crestline Clearing & Logistics (U) Ltd provides professional customs clearing, freight forwarding, cargo transportation, import and export handling." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/fS4Hqlw8NJRiN2NMSUPdEcy07202/social-images/social-1781164727481-88735055153022611.webp" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/fS4Hqlw8NJRiN2NMSUPdEcy07202/social-images/social-1781164727481-88735055153022611.webp" },
+      { name: "google-site-verification", content: "m_-nQJR09QBNTVZ3i4KNyvP3pOZEAW7E3ga1z3TTWys" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
