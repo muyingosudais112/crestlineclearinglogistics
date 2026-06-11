@@ -30,10 +30,16 @@ export function Footer() {
               across Uganda and the world.
             </p>
             <div className="flex gap-3">
-              {[Facebook, Linkedin, Twitter, Instagram].map((Icon, i) => (
+              {([
+                { Icon: Facebook, label: "Follow us on Facebook" },
+                { Icon: Linkedin, label: "Follow us on LinkedIn" },
+                { Icon: Twitter, label: "Follow us on Twitter" },
+                { Icon: Instagram, label: "Follow us on Instagram" },
+              ] as Array<{ Icon: LucideIcon; label: string }>).map(({ Icon, label }) => (
                 <a
-                  key={i}
+                  key={label}
                   href="#"
+                  aria-label={label}
                   className="w-10 h-10 rounded-lg border border-white/15 flex items-center justify-center hover:bg-gold hover:border-gold hover:text-navy-deep transition-smooth"
                 >
                   <Icon className="w-4 h-4" />
