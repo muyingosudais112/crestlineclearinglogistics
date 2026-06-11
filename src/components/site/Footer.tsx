@@ -1,4 +1,4 @@
-import { Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Facebook, Linkedin, Twitter, Instagram, type LucideIcon } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { Logo } from "@/components/site/Logo";
 
