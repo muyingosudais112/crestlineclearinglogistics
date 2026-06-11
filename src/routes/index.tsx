@@ -81,7 +81,7 @@ function Index() {
               <div className="flex flex-wrap gap-4">
                 <Button asChild variant="gold" size="lg">
                   <Link to="/about">
-                    Learn More <ArrowRight className="w-4 h-4" />
+                    About Our Logistics Services <ArrowRight className="w-4 h-4" />
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
