@@ -27,7 +27,9 @@ export function Hero() {
           loop
           muted
           playsInline
-          preload="auto"
+          preload="metadata"
+          width={1920}
+          height={1080}
           aria-hidden="true"
           className="w-full h-full object-cover will-change-transform animate-hero-zoom"
         />
