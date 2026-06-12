@@ -57,7 +57,7 @@ function WhyUsPage() {
                   <div className="w-12 h-12 rounded-lg bg-gradient-gold flex items-center justify-center mb-5 group-hover:scale-110 transition-smooth shadow-gold">
                     <it.icon className="w-5 h-5 text-navy-deep" />
                   </div>
-                  <h3 className="font-display text-lg font-bold text-white mb-2">{it.title}</h3>
+                  <h2 className="font-display text-lg font-bold text-white mb-2">{it.title}</h2>
                   <p className="text-white/70 text-sm leading-relaxed">{it.desc}</p>
                 </div>
               ))}
