@@ -19,6 +19,28 @@ export const Route = createFileRoute("/services")({
       { property: "og:description", content: "End-to-end logistics services for importers and exporters in Uganda." },
     ],
     links: [{ rel: "canonical", href: "/services" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "Logistics Services — Crestline Clearing & Logistics",
+          url: "https://crestlineclearinglogistics.lovable.app/services",
+          about: [
+            "Customs Clearing","Freight Forwarding","Import & Export Documentation",
+            "Cargo Handling","Air Freight","Sea Freight","Land Transportation",
+            "Warehousing","Supply Chain Solutions",
+          ],
+          provider: {
+            "@type": "LocalBusiness",
+            name: "Crestline Clearing & Logistics (U) Ltd",
+            telephone: "+256778370959",
+            address: { "@type": "PostalAddress", addressLocality: "Kampala", addressCountry: "UG" },
+          },
+        }),
+      },
+    ],
   }),
 });
 
@@ -58,7 +80,7 @@ function ServicesPage() {
                   <div className="w-14 h-14 rounded-xl bg-navy/5 group-hover:bg-gradient-navy flex items-center justify-center mb-6 transition-smooth">
                     <s.icon className="w-6 h-6 text-navy group-hover:text-gold transition-smooth" />
                   </div>
-                  <h3 className="font-display text-xl font-bold text-navy mb-2">{s.title}</h3>
+                  <h2 className="font-display text-xl font-bold text-navy mb-2">{s.title}</h2>
                   <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
                 </div>
               ))}

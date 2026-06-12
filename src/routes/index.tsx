@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Crestline Clearing & Logistics (U) Ltd | Customs & Freight in Uganda" },
+      { title: "Crestline Clearing & Logistics | Customs & Freight Uganda" },
       {
         name: "description",
         content:

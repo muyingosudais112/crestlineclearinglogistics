@@ -22,6 +22,33 @@ export const Route = createFileRoute("/contact")({
       { property: "og:description", content: "Get in touch for a freight or customs clearing quote." },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Crestline Clearing & Logistics (U) Ltd",
+          url: "https://crestlineclearinglogistics.lovable.app/contact",
+          telephone: "+256778370959",
+          email: "info@crestlinelogistics.co.ug",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Kampala",
+            addressCountry: "UG",
+          },
+          areaServed: "Uganda",
+          openingHoursSpecification: [
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+              opens: "08:00",
+              closes: "18:00",
+            },
+          ],
+        }),
+      },
+    ],
   }),
 });
 
