@@ -110,7 +110,6 @@ function Index() {
           </div>
         </section>
 
-        <TestimonialsBlock />
       </main>
       <Partners />
       <Footer />
