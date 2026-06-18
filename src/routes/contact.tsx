@@ -29,7 +29,7 @@ export const Route = createFileRoute("/contact")({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           name: "Crestway Clearing & Logistics (U) Ltd",
-          url: "https://crestwayclearinglogistics.lovable.app/contact",
+          url: "https://crestlineclearinglogistics.lovable.app/contact",
           telephone: "+256778370959",
           email: "info@crestwaylogistics.co.ug",
           address: {

@@ -26,7 +26,7 @@ export const Route = createFileRoute("/services")({
           "@context": "https://schema.org",
           "@type": "CollectionPage",
           name: "Logistics Services — Crestway Clearing & Logistics",
-          url: "https://crestwayclearinglogistics.lovable.app/services",
+          url: "https://crestlineclearinglogistics.lovable.app/services",
           about: [
             "Customs Clearing","Freight Forwarding","Import & Export Documentation",
             "Cargo Handling","Air Freight","Sea Freight","Land Transportation",
