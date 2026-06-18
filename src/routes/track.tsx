@@ -27,9 +27,9 @@ export const Route = createFileRoute("/track")({
   component: TrackPage,
   head: () => ({
     meta: [
-      { title: "Track Shipment | Crestline Clearing & Logistics" },
-      { name: "description", content: "Track your shipment status in real time with Crestline Clearing & Logistics. Enter your tracking ID to see progress from clearance to delivery." },
-      { property: "og:title", content: "Track Shipment — Crestline Logistics" },
+      { title: "Track Shipment | Crestway Clearing & Logistics" },
+      { name: "description", content: "Track your shipment status in real time with Crestway Clearing & Logistics. Enter your tracking ID to see progress from clearance to delivery." },
+      { property: "og:title", content: "Track Shipment — Crestway Logistics" },
       { property: "og:description", content: "Real-time shipment tracking across Uganda and beyond." },
     ],
     links: [{ rel: "canonical", href: "/track" }],

@@ -14,7 +14,7 @@ export function About() {
         <div className="relative">
           <img
             src={warehouse}
-            alt="Crestline warehouse operations"
+            alt="Crestway warehouse operations"
             loading="lazy"
             width={1280}
             height={800}
@@ -30,13 +30,13 @@ export function About() {
 
         <div>
           <div className="text-xs tracking-[0.25em] uppercase text-gold font-semibold mb-4">
-            About Crestline
+            About Crestway
           </div>
           <h2 className="font-display text-4xl lg:text-5xl font-bold text-navy mb-6 leading-tight">
             Your trusted partner in <span className="group relative bg-card rounded-2xl p-8 border-border shadow-card hover:shadow-elegant transition-smooth hover:-translate-y-1 overflow-hidden border-0 bg-gray-900">customs & logistics</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-            Crestline Clearing & Logistics (U) Ltd helps businesses navigate customs procedures and
+            Crestway Clearing & Logistics (U) Ltd helps businesses navigate customs procedures and
             transport cargo smoothly across Uganda and internationally. From documentation to
             doorstep delivery, we handle the complexity so you can focus on growing your business.
           </p>

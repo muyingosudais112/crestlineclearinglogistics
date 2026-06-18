@@ -6,9 +6,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 
 const mapEmbedUrl =
-  "https://www.google.com/maps?q=Crestline%20Clearing%20%26%20Logistics%20%28U%29%20Ltd%20Kampala%2C%20Uganda&z=14&output=embed";
+  "https://www.google.com/maps?q=Crestway%20Clearing%20%26%20Logistics%20%28U%29%20Ltd%20Kampala%2C%20Uganda&z=14&output=embed";
 const directionsUrl =
-  "https://www.google.com/maps/dir/?api=1&destination=Crestline%20Clearing%20%26%20Logistics%20%28U%29%20Ltd%20Kampala%2C%20Uganda";
+  "https://www.google.com/maps/dir/?api=1&destination=Crestway%20Clearing%20%26%20Logistics%20%28U%29%20Ltd%20Kampala%2C%20Uganda";
 
 export function Contact() {
   const [loading, setLoading] = useState(false);
@@ -58,13 +58,13 @@ export function Contact() {
                   <div className="font-semibold text-navy">Kampala, Uganda</div>
                 </div>
               </div>
-              <a href="mailto:info@crestlinelogistics.co.ug" className="flex items-center gap-4 group">
+              <a href="mailto:info@crestwaylogistics.co.ug" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-xl bg-gradient-navy flex items-center justify-center shadow-card group-hover:shadow-gold transition-smooth">
                   <Mail className="w-5 h-5 text-gold" />
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">Email</div>
-                  <div className="font-semibold text-navy">info@crestlinelogistics.co.ug</div>
+                  <div className="font-semibold text-navy">info@crestwaylogistics.co.ug</div>
                 </div>
               </a>
             </div>
@@ -73,7 +73,7 @@ export function Contact() {
               <div className="relative aspect-[16/10] bg-secondary">
                 <iframe
                   src={mapEmbedUrl}
-                  title="Crestline Clearing & Logistics location map"
+                  title="Crestway Clearing & Logistics location map"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   allowFullScreen
@@ -84,7 +84,7 @@ export function Contact() {
                   href={directionsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Open Crestline location in Google Maps"
+                  aria-label="Open Crestway location in Google Maps"
                   className="absolute inset-0"
                 />
               </div>
@@ -94,7 +94,7 @@ export function Contact() {
                     <MapPin className="w-5 h-5 text-gold" />
                   </div>
                   <div>
-                    <div className="font-semibold text-navy">Crestline Clearing & Logistics (U) Ltd</div>
+                    <div className="font-semibold text-navy">Crestway Clearing & Logistics (U) Ltd</div>
                     <div className="text-sm text-muted-foreground">Kampala, Uganda</div>
                   </div>
                 </div>

@@ -13,9 +13,9 @@ export const Route = createFileRoute("/services")({
   component: ServicesPage,
   head: () => ({
     meta: [
-      { title: "Services | Crestline Clearing & Logistics" },
+      { title: "Services | Crestway Clearing & Logistics" },
       { name: "description", content: "Customs clearing, freight forwarding, warehousing and supply chain solutions — air, sea and land freight across Uganda and worldwide." },
-      { property: "og:title", content: "Logistics Services — Crestline" },
+      { property: "og:title", content: "Logistics Services — Crestway" },
       { property: "og:description", content: "End-to-end logistics services for importers and exporters in Uganda." },
     ],
     links: [{ rel: "canonical", href: "/services" }],
@@ -25,8 +25,8 @@ export const Route = createFileRoute("/services")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: "Logistics Services — Crestline Clearing & Logistics",
-          url: "https://crestlineclearinglogistics.lovable.app/services",
+          name: "Logistics Services — Crestway Clearing & Logistics",
+          url: "https://crestwayclearinglogistics.lovable.app/services",
           about: [
             "Customs Clearing","Freight Forwarding","Import & Export Documentation",
             "Cargo Handling","Air Freight","Sea Freight","Land Transportation",
@@ -34,7 +34,7 @@ export const Route = createFileRoute("/services")({
           ],
           provider: {
             "@type": "LocalBusiness",
-            name: "Crestline Clearing & Logistics (U) Ltd",
+            name: "Crestway Clearing & Logistics (U) Ltd",
             telephone: "+256778370959",
             address: { "@type": "PostalAddress", addressLocality: "Kampala", addressCountry: "UG" },
           },

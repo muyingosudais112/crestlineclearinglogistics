@@ -12,9 +12,9 @@ export const Route = createFileRoute("/why-us")({
   component: WhyUsPage,
   head: () => ({
     meta: [
-      { title: "Why Choose Us | Crestline Clearing & Logistics" },
-      { name: "description", content: "Why importers and exporters trust Crestline — fast customs clearance, full compliance, experienced agents and reliable delivery across Uganda." },
-      { property: "og:title", content: "Why Choose Crestline" },
+      { title: "Why Choose Us | Crestway Clearing & Logistics" },
+      { name: "description", content: "Why importers and exporters trust Crestway — fast customs clearance, full compliance, experienced agents and reliable delivery across Uganda." },
+      { property: "og:title", content: "Why Choose Crestway" },
       { property: "og:description", content: "Built for businesses that move the world." },
     ],
     links: [{ rel: "canonical", href: "/why-us" }],
@@ -36,7 +36,7 @@ function WhyUsPage() {
       <Navbar />
       <main>
         <PageHeader
-          eyebrow="Why Choose Crestline"
+          eyebrow="Why Choose Crestway"
           title="Built for businesses that move the world."
           description="A premium logistics partner combining deep local expertise with international freight reach."
         />

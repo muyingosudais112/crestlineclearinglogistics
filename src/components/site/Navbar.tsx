@@ -22,7 +22,7 @@ export function Navbar() {
         <Link to="/" className="flex items-center gap-2.5 text-white shrink-0">
           <Logo size={44} className="drop-shadow-[0_2px_8px_rgba(212,175,55,0.35)]" />
           <div className="leading-tight">
-            <div className="font-display font-bold text-base">Crestline</div>
+            <div className="font-display font-bold text-base">Crestway</div>
             <div className="text-[10px] tracking-[0.2em] text-gold uppercase">Clearing & Logistics</div>
           </div>
         </Link>

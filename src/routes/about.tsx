@@ -11,9 +11,9 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
   head: () => ({
     meta: [
-      { title: "About Us | Crestline Clearing & Logistics" },
-      { name: "description", content: "Learn about Crestline Clearing & Logistics — a Kampala-based customs and freight forwarding partner trusted across Uganda and the region." },
-      { property: "og:title", content: "About Crestline Clearing & Logistics" },
+      { title: "About Us | Crestway Clearing & Logistics" },
+      { name: "description", content: "Learn about Crestway Clearing & Logistics — a Kampala-based customs and freight forwarding partner trusted across Uganda and the region." },
+      { property: "og:title", content: "About Crestway Clearing & Logistics" },
       { property: "og:description", content: "Your trusted partner in customs and logistics across Uganda and beyond." },
     ],
     links: [{ rel: "canonical", href: "/about" }],
@@ -33,7 +33,7 @@ function AboutPage() {
       <Navbar />
       <main>
         <PageHeader
-          eyebrow="About Crestline"
+          eyebrow="About Crestway"
           title="Your trusted partner in customs & logistics."
           description="From documentation to doorstep delivery, we handle the complexity so you can focus on growing your business."
         />
@@ -43,7 +43,7 @@ function AboutPage() {
             <div className="relative">
               <img
                 src={warehouse}
-                alt="Crestline warehouse operations in Kampala, Uganda"
+                alt="Crestway warehouse operations in Kampala, Uganda"
                 loading="lazy"
                 width={1280}
                 height={800}
@@ -62,7 +62,7 @@ function AboutPage() {
                 Built on accuracy, speed and accountability.
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Crestline Clearing & Logistics (U) Ltd helps businesses navigate customs procedures
+                Crestway Clearing & Logistics (U) Ltd helps businesses navigate customs procedures
                 and transport cargo smoothly across Uganda and internationally. We serve SMEs,
                 corporates and international trade partners with the speed and precision modern
                 supply chains demand.

@@ -20,7 +20,7 @@ export function WhyUs() {
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
         <div className="max-w-3xl mb-16">
           <div className="text-xs tracking-[0.25em] uppercase text-gold font-semibold mb-4">
-            Why Choose Crestline
+            Why Choose Crestway
           </div>
           <h2 className="font-display text-4xl lg:text-5xl font-bold text-white leading-tight">
             Built for businesses that <span className="group relative bg-card rounded-2xl p-8 border-border shadow-card hover:shadow-elegant transition-smooth hover:-translate-y-1 overflow-hidden border-0 bg-gray-900">​</span>

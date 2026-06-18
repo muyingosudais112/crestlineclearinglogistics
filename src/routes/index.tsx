@@ -14,13 +14,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Crestline Clearing & Logistics | Customs & Freight Uganda" },
+      { title: "Crestway Clearing & Logistics | Customs & Freight Uganda" },
       {
         name: "description",
         content:
           "Trusted customs clearing, freight forwarding & logistics in Kampala, Uganda. Air, sea & land freight, warehousing and supply chain solutions.",
       },
-      { property: "og:title", content: "Crestline Clearing & Logistics (U) Ltd" },
+      { property: "og:title", content: "Crestway Clearing & Logistics (U) Ltd" },
       { property: "og:description", content: "Reliable customs clearing and logistics solutions in Uganda." },
       { property: "og:type", content: "website" },
     ],
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          name: "Crestline Clearing & Logistics (U) Ltd",
+          name: "Crestway Clearing & Logistics (U) Ltd",
           telephone: "+256778370959",
           address: { "@type": "PostalAddress", addressLocality: "Kampala", addressCountry: "UG" },
           areaServed: "Uganda",
@@ -74,7 +74,7 @@ function Index() {
                 A premium logistics partner for businesses that move the world.
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                Based in Kampala with a strong regional network, Crestline delivers end-to-end
+                Based in Kampala with a strong regional network, Crestway delivers end-to-end
                 customs clearing, freight forwarding and supply chain solutions for importers,
                 exporters and corporates across Uganda and beyond.
               </p>
