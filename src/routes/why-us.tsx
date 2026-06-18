@@ -4,6 +4,7 @@ import { Footer } from "@/components/site/Footer";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { Toaster } from "@/components/ui/sonner";
 import { PageHeader } from "@/components/site/PageHeader";
+import { TestimonialsBlock } from "@/components/site/TestimonialsBlock";
 import { Zap, ShieldCheck, Users, BadgeCheck, Clock } from "lucide-react";
 import trucks from "@/assets/trucks.jpg";
 
