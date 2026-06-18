@@ -65,6 +65,8 @@ function WhyUsPage() {
             </div>
           </div>
         </section>
+
+        <TestimonialsBlock />
       </main>
       <Footer />
       <WhatsAppButton />
