@@ -4,7 +4,7 @@ import { Hero } from "@/components/site/Hero";
 import { Footer } from "@/components/site/Footer";
 import { Partners } from "@/components/site/Partners";
 import { StatsCompact } from "@/components/site/StatsCompact";
-import { TestimonialsBlock } from "@/components/site/TestimonialsBlock";
+
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { Toaster } from "@/components/ui/sonner";
 import { Button } from "@/components/ui/button";
@@ -110,7 +110,6 @@ function Index() {
           </div>
         </section>
 
-        <TestimonialsBlock />
       </main>
       <Partners />
       <Footer />
