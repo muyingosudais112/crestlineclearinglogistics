@@ -20,12 +20,12 @@ export function Footer() {
             <div className="flex items-center gap-2.5 mb-5">
               <Logo size={44} />
               <div className="leading-tight">
-                <div className="font-display font-bold">Crestline</div>
+                <div className="font-display font-bold">Crestway</div>
                 <div className="text-[10px] tracking-[0.2em] text-gold uppercase">Clearing & Logistics</div>
               </div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
-              Crestline Clearing & Logistics (U) Ltd is a Kampala-based customs clearing and freight
+              Crestway Clearing & Logistics (U) Ltd is a Kampala-based customs clearing and freight
               forwarding company helping importers, exporters and corporates move cargo efficiently
               across Uganda and the world.
             </p>
@@ -64,13 +64,13 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-white/70">
               <li>Kampala, Uganda</li>
               <li><a href="tel:+256778370959" className="hover:text-gold transition-smooth">+256 778 370959</a></li>
-              <li><a href="mailto:info@crestlinelogistics.co.ug" className="hover:text-gold transition-smooth">info@crestlinelogistics.co.ug</a></li>
+              <li><a href="mailto:info@crestwaylogistics.co.ug" className="hover:text-gold transition-smooth">info@crestwaylogistics.co.ug</a></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/50">
-          <div>© {new Date().getFullYear()} Crestline Clearing & Logistics (U) Ltd. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} Crestway Clearing & Logistics (U) Ltd. All rights reserved.</div>
           <div>Built for businesses that move the world.</div>
         </div>
       </div>

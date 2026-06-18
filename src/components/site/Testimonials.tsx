@@ -3,13 +3,13 @@ import { Quote, Star } from "lucide-react";
 const reviews = [
   {
     quote:
-      "Crestline cleared our consignment in record time. Their team kept us updated at every stage — truly a professional outfit.",
+      "Crestway cleared our consignment in record time. Their team kept us updated at every stage — truly a professional outfit.",
     name: "Sarah Nakimuli",
     role: "Procurement Lead, Kampala Trading Co.",
   },
   {
     quote:
-      "We've moved over 40 containers with Crestline. Zero delays, zero surprises. They feel like an extension of our team.",
+      "We've moved over 40 containers with Crestway. Zero delays, zero surprises. They feel like an extension of our team.",
     name: "David Okello",
     role: "Operations Director, EastAfri Imports",
   },
