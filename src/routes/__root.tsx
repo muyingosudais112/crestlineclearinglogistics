@@ -83,8 +83,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Crestway Clearing & Logistics (U) Ltd | Freight forwarding" },
       { name: "twitter:description", content: "Crestway Clearing & Logistics (U) Ltd provides professional customs clearing, freight forwarding, cargo transportation, import and export handling." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/fS4Hqlw8NJRiN2NMSUPdEcy07202/social-images/social-1781164727481-88735055153022611.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/fS4Hqlw8NJRiN2NMSUPdEcy07202/social-images/social-1781164727481-88735055153022611.webp" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/ec8502c4-6fe8-4a55-9b4e-43379f6c0993" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/ec8502c4-6fe8-4a55-9b4e-43379f6c0993" },
       { name: "google-site-verification", content: "m_-nQJR09QBNTVZ3i4KNyvP3pOZEAW7E3ga1z3TTWys" },
     ],
     links: [
